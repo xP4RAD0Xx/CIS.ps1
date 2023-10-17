@@ -122,7 +122,6 @@ Paradox
 <br><br>
 "
 
-# Adding a Table Header
 Add-Content $FileName "
 <table >
 <tr>
@@ -130,6 +129,7 @@ Add-Content $FileName "
 </tr>
 "
 
+# Parameters to be tested
 CisReg $FileName "2.2.35" "HKLM:\SYSTEM\ControlSet001\Services\WdiServiceHost" "ObjectName" "NT AUTHORITY\\LocalService"
 CisReg $FileName "2.3.1.4" "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" "LimitBlankPasswordUse" "1"
 CisReg $FileName "2.3.2.1" "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" "SCENoApplyLegacyAuditPolicy" "1"
@@ -244,7 +244,6 @@ CisReg $FileName "18.9.96.2" "HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShe
 CisReg $FileName "18.9.103.4" "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" "NoAutoRebootWithLoggedOnUsers" "0"
 
 
-# Adding the remaining HTML Contents
 Add-Content Report.html "
 </table>
 <br><br>
